@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="My Portfolio Website To Showcase The Work I Have Done So Far,
+      The Services I Provide And All My Professionals Life."
+    />
+    <meta name="keywords" content="HTML, CSS, JavaScript Portfolio Website" />
+    <meta name="author" content="Waleed Ahmad" />
+    <title>Waleed Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <img src="images/logo.jpg" alt="Our main logo" class="logo" />
+      <nav class="navbar">
+        <ul class="navbar-lists">
+          <li>
+            <a href="#" class="navbar-link home-link">Home</a>
+          </li>
+          <li>
+            <a href="about.html" class="navbar-link about-link">About</a>
+          </li>
+          <li>
+            <a href="service.html" class="navbar-link service-link">Services</a>
+          </li>
+          <li>
+            <a href="#" class="navbar-link portfolio-link">Portfolio</a>
+          </li>
+          <li>
+            <a href="contact.html" class="navbar-link contact-link"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-navbar-btn">
+        <ion-icon
+          name="menu-outline"
+          class="mobile-nav-icon"
+          id="menu-outline"
+        ></ion-icon>
+        <ion-icon
+          name="close-outline"
+          class="mobile-nav-icon"
+          id="close-outline"
+        ></ion-icon>
+      </div>
+    </header>
+
+    <!-- ====================================
+
+             Main Hero Section START
+
+    ========================================= -->
+
+    <main>
+      <section class="section-hero section">
+        <div class="container grid grid-two-column">
+          <!-- Hero Section Left Side -->
+
+          <div class="section-hero-data">
+            <p class="hero-top-data">THIS IS ME</p>
+            <h1 class="hero-heading">Waleed Ahmad</h1>
+            <p class="hero-para">
+              Hi, I'm Waleed Ahmad. A Full Stack Developer & Freelancer I,m
+              Working On Beautiful Modern Websites
+            </p>
+            <div><a href="#" class="btn hireme-btn">Hire Me</a></div>
+          </div>
+
+          <!-- Hero Section Right Side -->
+
+          <div class="section-hero-image">
+            <img
+              src="images/hero.jpg"
+              alt="This Is Me Waleed Ahmad"
+              class="hero-img"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ====================================
+
+              Bio-Data Section START
+
+    ========================================= -->
+
+    <section class="section-biodata section">
+      <div class="container grid grid-two-column">
+        <div class="bio-image">
+          <img src="images/biodata.jpg" alt="My bio data image" />
+        </div>
+
+        <!-- Bio Right Side Data -->
+
+        <div class="bio-data">
+          <h2 class="common-heading">My Bio-Data</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+            impedit deserunt inventore neque, aperiam ratione sint unde, at
+            maiores voluptate modi ipsa beatae libero consequuntur quos eaque
+            harum deleniti quo!
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias rem
+            eaque dolorum.
+          </p>
+          <div class="bio-data-stats">
+            <div class="bio-stats">
+              <h3>Design</h3>
+              <div class="bio-progress-bar">
+                <span>80%</span>
+              </div>
+            </div>
+
+            <div class="bio-stats">
+              <h3>HTML</h3>
+              <div class="bio-progress-bar bio-progress-2">
+                <span>95%</span>
+              </div>
+            </div>
+
+            <div class="bio-stats">
+              <h3>CSS</h3>
+              <div class="bio-progress-bar bio-progress-3">
+                <span>80%</span>
+              </div>
+            </div>
+
+            <div class="bio-stats">
+              <h3>JavaScript</h3>
+              <div class="bio-progress-bar bio-progress-4">
+                <span>75%</span>
+              </div>
+            </div>
+
+            <div class="bio-stats">
+              <h3>MERN</h3>
+              <div class="bio-progress-bar bio-progress-5">
+                <span>70%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bio-data-btn">
+            <a href="#" class="btn">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================
+
+              Portfolio Section START
+
+    ========================================= -->
+
+    <section class="section section-portfolio" id="portfolio-section">
+      <div class="container">
+        <h2 class="common-heading">Latest Works</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+          debitis! Accusantium exercitationem eos ad distinctio.
+        </p>
+      </div>
+
+      <div class="p-btns">
+        <div class="btn p-btn" data-btn-num="1">Website</div>
+        <div class="btn p-btn" data-btn-num="2">Design</div>
+        <div class="btn p-btn" data-btn-num="3">Tricks</div>
+      </div>
+
+      <div class="container grid grid-three-column portfolio-images">
+        <div class="img-overlay p-btn--1">
+          <img src="images/folio/1.jpg" alt="My works" />
+          <div class="overlay">
+            <a
+              href="http://charcounter.thapaonlineclass.com/"
+              target="_waleed"
+              class="common-heading"
+              >Project 1</a
+            >
+          </div>
+        </div>
+
+        <div class="img-overlay p-btn--3">
+          <img src="images/folio/5.jpg" alt="My works" />
+          <div class="overlay">
+            <a
+              href="http://charcounter.thapaonlineclass.com/"
+              target="_waleed"
+              class="common-heading"
+              >Project 2</a
+            >
+          </div>
+        </div>
+
+        <div class="img-overlay p-btn--1">
+          <img src="images/folio/3.jpg" alt="My works" />
+          <div class="overlay">
+            <a href="" target="_blank" class="common-heading">Project 3</a>
+          </div>
+        </div>
+
+        <div class="img-overlay p-btn--1 p-btn--2">
+          <img src="images/folio/4.jpg" alt="My works" />
+          <div class="overlay">
+            <a href="" target="_blank" class="common-heading">Project 4</a>
+          </div>
+        </div>
+
+        <div class="img-overlay p-btn--2">
+          <img src="images/folio/5.jpg" alt="My works" />
+          <div class="overlay">
+            <a href="" target="_blank" class="common-heading">Project 5</a>
+          </div>
+        </div>
+
+        <div class="img-overlay p-btn--1">
+          <img src="images/folio/4.jpg" alt="My works" />
+          <div class="overlay">
+            <a href="" target="_blank" class="common-heading">Project 6</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================
+
+            Counter Section START
+
+    ========================================= -->
+
+    <section class="section section-work-data">
+      <div class="container grid grid-four-column">
+        <div>
+          <h2 class="counter-numbers" data-number="2000">0+</h2>
+          <p>Project Completed</p>
+        </div>
+
+        <div>
+          <h2 class="counter-numbers" data-number="6000">0+</h2>
+          <p>Happy Clients</p>
+        </div>
+
+        <div>
+          <h2 class="counter-numbers" data-number="5000">0+</h2>
+          <p>Cups Of Cofee</p>
+        </div>
+
+        <div>
+          <h2 class="counter-numbers" data-number="3000">0+</h2>
+          <p>Real Professionals</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================
+
+              Service Section START
+
+    ========================================= -->
+
+    <section class="section section-services">
+      <div class="container">
+        <h2 class="common-heading">Services Offers</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti
+          laborum reiciendis atque dolore.
+        </p>
+      </div>
+
+      <!-- Services Offers Card -->
+
+      <div class="container grid grid-three-column">
+        <div class="service-box">
+          <ion-icon name="desktop-outline" class="service-icon"></ion-icon>
+          <h3>Web Design</h3>
+          <p>
+            "This Is Not Because Things Are Difficult That We Do Not Dare; It Is
+            Because We Do Not Dare That They Are Difficult."
+          </p>
+        </div>
+
+        <div class="service-box">
+          <ion-icon name="logo-react" class="service-icon"></ion-icon>
+          <h3>Web Development</h3>
+          <p>
+            "This Is Not Because Things Are Difficult That We Do Not Dare; It Is
+            Because We Do Not Dare That They Are Difficult."
+          </p>
+        </div>
+
+        <div class="service-box">
+          <ion-icon name="camera-outline" class="service-icon"></ion-icon>
+          <h3>Photography</h3>
+          <p>
+            "This Is Not Because Things Are Difficult That We Do Not Dare; It Is
+            Because We Do Not Dare That They Are Difficult."
+          </p>
+        </div>
+
+        <div class="service-box">
+          <ion-icon name="phone-portrait-sharp" class="service-icon"></ion-icon>
+          <h3>Mobile Apps</h3>
+          <p>
+            "This Is Not Because Things Are Difficult That We Do Not Dare; It Is
+            Because We Do Not Dare That They Are Difficult."
+          </p>
+        </div>
+
+        <div class="service-box">
+          <ion-icon name="globe-outline" class="service-icon"></ion-icon>
+          <h3>Apps Interface</h3>
+          <p>
+            "This Is Not Because Things Are Difficult That We Do Not Dare; It Is
+            Because We Do Not Dare That They Are Difficult."
+          </p>
+        </div>
+
+        <div class="service-box">
+          <ion-icon name="desktop-outline" class="service-icon"></ion-icon>
+          <h3>Graphic Design</h3>
+          <p>
+            "This Is Not Because Things Are Difficult That We Do Not Dare; It Is
+            Because We Do Not Dare That They Are Difficult."
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================
+
+            Testimonial Section START
+
+    ========================================= -->
+
+    <!-- Swiper -->
+
+    <section class="section section-testimonial">
+      <div class="container">
+        <h2 class="common-heading">Happy Client Works</h2>
+      </div>
+      <div class="swiper mySwiper container">
+        <div class="swiper-wrapper">
+          <!-- Section START -->
+
+          <div class="swiper-slide">
+            <div class="swiper-client-msg">
+              <p>
+                WALEED: You Know Sometimes When I'm Talking, My Words Can't Keep
+                Up With My Thoughts... I Wonder Why We Think Faster Than We
+                Speak. Hobbies: Probably So We Can Think Twice.
+              </p>
+            </div>
+            <div class="swiper-client-data grid grid-two-column">
+              <figure>
+                <img src="images/clients/a.jpg" alt="Client review" />
+              </figure>
+              <div class="client-data-details">
+                <p>Waleed Ahmad</p>
+                <p>Developer</p>
+              </div>
+            </div>
+          </div>
+          <!-- Section END -->
+          <div class="swiper-slide">
+            <div class="swiper-client-msg">
+              <p>
+                WALEED: You Know Sometimes When I'm Talking, My Words Can't Keep
+                Up With My Thoughts... I Wonder Why We Think Faster Than We
+                Speak. Hobbies: Probably So We Can Think Twice.
+              </p>
+            </div>
+            <div class="swiper-client-data grid grid-two-column">
+              <figure>
+                <img src="images/clients/b.jpg" alt="Client review" />
+              </figure>
+              <div class="client-data-details">
+                <p>Waleed Ahmad</p>
+                <p>Developer</p>
+              </div>
+            </div>
+          </div>
+          <!-- Section END -->
+          <div class="swiper-slide">
+            <div class="swiper-client-msg">
+              <p>
+                WALEED: You Know Sometimes When I'm Talking, My Words Can't Keep
+                Up With My Thoughts... I Wonder Why We Think Faster Than We
+                Speak. Hobbies: Probably So We Can Think Twice.
+              </p>
+            </div>
+            <div class="swiper-client-data grid grid-two-column">
+              <figure>
+                <img src="images/clients/c.jpg" alt="Client review" />
+              </figure>
+              <div class="client-data-details">
+                <p>Waleed Ahmad</p>
+                <p>Developer</p>
+              </div>
+            </div>
+          </div>
+          <!-- Section END -->
+          <div class="swiper-slide">
+            <div class="swiper-client-msg">
+              <p>
+                WALEED: You Know Sometimes When I'm Talking, My Words Can't Keep
+                Up With My Thoughts... I Wonder Why We Think Faster Than We
+                Speak. Hobbies: Probably So We Can Think Twice.
+              </p>
+            </div>
+            <div class="swiper-client-data grid grid-two-column">
+              <figure>
+                <img src="images/clients/d.jpg" alt="Client review" />
+              </figure>
+              <div class="client-data-details">
+                <p>Waleed Ahmad</p>
+                <p>Developer</p>
+              </div>
+            </div>
+          </div>
+          <!-- Section END -->
+          <div class="swiper-slide">
+            <div class="swiper-client-msg">
+              <p>
+                WALEED: You Know Sometimes When I'm Talking, My Words Can't Keep
+                Up With My Thoughts... I Wonder Why We Think Faster Than We
+                Speak. Hobbies: Probably So We Can Think Twice.
+              </p>
+            </div>
+            <div class="swiper-client-data grid grid-two-column">
+              <figure>
+                <img src="images/clients/e.jpg" alt="Client review" />
+              </figure>
+              <div class="client-data-details">
+                <p>Waleed Ahmad</p>
+                <p>Developer</p>
+              </div>
+            </div>
+          </div>
+          <!-- Section END -->
+          <div class="swiper-slide">
+            <div class="swiper-client-msg">
+              <p>
+                WALEED: You Know Sometimes When I'm Talking, My Words Can't Keep
+                Up With My Thoughts... I Wonder Why We Think Faster Than We
+                Speak. Hobbies: Probably So We Can Think Twice.
+              </p>
+            </div>
+            <div class="swiper-client-data grid grid-two-column">
+              <figure>
+                <img src="images/clients/f.jpg" alt="Client review" />
+              </figure>
+              <div class="client-data-details">
+                <p>Waleed Ahmad</p>
+                <p>Developer</p>
+              </div>
+            </div>
+          </div>
+          <!-- Section END -->
+          <div class="swiper-slide">
+            <div class="swiper-client-msg">
+              <p>
+                WALEED: You Know Sometimes When I'm Talking, My Words Can't Keep
+                Up With My Thoughts... I Wonder Why We Think Faster Than We
+                Speak. Hobbies: Probably So We Can Think Twice.
+              </p>
+            </div>
+            <div class="swiper-client-data grid grid-two-column">
+              <figure>
+                <img src="images/clients/g.jpg" alt="Client review" />
+              </figure>
+              <div class="client-data-details">
+                <p>Waleed Ahmad</p>
+                <p>Developer</p>
+              </div>
+            </div>
+          </div>
+          <!-- Section END -->
+          <div class="swiper-slide">
+            <div class="swiper-client-msg">
+              <p>
+                WALEED: You Know Sometimes When I'm Talking, My Words Can't Keep
+                Up With My Thoughts... I Wonder Why We Think Faster Than We
+                Speak. Hobbies: Probably So We Can Think Twice.
+              </p>
+            </div>
+            <div class="swiper-client-data grid grid-two-column">
+              <figure>
+                <img src="images/clients/h.jpg" alt="Client review" />
+              </figure>
+              <div class="client-data-details">
+                <p>Waleed Ahmad</p>
+                <p>Developer</p>
+              </div>
+            </div>
+          </div>
+          <!-- Section END -->
+          <div class="swiper-slide">
+            <div class="swiper-client-msg">
+              <p>
+                WALEED: You Know Sometimes When I'm Talking, My Words Can't Keep
+                Up With My Thoughts... I Wonder Why We Think Faster Than We
+                Speak. Hobbies: Probably So We Can Think Twice.
+              </p>
+            </div>
+            <div class="swiper-client-data grid grid-two-column">
+              <figure>
+                <img src="images/clients/a.jpg" alt="Client review" />
+              </figure>
+              <div class="client-data-details">
+                <p>Waleed Ahmad</p>
+                <p>Developer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- ====================================
+
+            FreeLancing Section START
+
+    ========================================= -->
+
+    <section class="section section-freelancing">
+      <div class="overlay"></div>
+      <div class="container">
+        <h2>I Am <span>Available</span> For Freelancing</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus vitae
+          quibusdam nisi nihil.
+        </p>
+        <a href="/contact.html" class="btn">HIRE ME</a>
+      </div>
+    </section>
+
+    <!-- ====================================
+
+            Contact Us Section START
+
+    ========================================= -->
+
+    <section class="section section-contact">
+      <div class="container">
+        <h2 class="common-heading">Contact Us</h2>
+      </div>
+      <div class="section-contact-main contact-container">
+        <form action="https://formspree.io/f/xvoljapg" method="POST">
+          <div class="grid grid-two-column">
+            <div>
+              <label for="username"></label>
+              <input
+                type="text"
+                name="Username"
+                placeholder="Username"
+                id="username"
+                autocomplete="off"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="email"></label>
+              <input
+                type="email"
+                name="Email"
+                placeholder="demo@gmail.com"
+                id="email"
+                autocomplete="off"
+                required
+              />
+            </div>
+          </div>
+
+          <div>
+            <label for="subject"></label>
+            <input
+              type="text"
+              name="subject"
+              placeholder="Subject"
+              id="subject"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="textarea"></label>
+            <textarea
+              name="Message"
+              id="textarea"
+              cols="30"
+              rows="10"
+              placeholder="Write Your Message"
+              autocomplete="off"
+              required
+              min="10"
+            ></textarea>
+          </div>
+
+          <div>
+            <input type="submit" id="submit" class="btn" value="send message" />
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ====================================
+
+              Footer Section START
+
+    ========================================= -->
+
+    <footer class="section-footer section">
+      <div class="container grid grid-four-column">
+        <div class="f-about">
+          <h3>About</h3>
+          <p>
+            We Have Tested A Number Of Registry Fix And Clean Utilities And
+            Present Our Top 3 List On Our Site For Your Convenience. Hope You
+            Like It.
+          </p>
+        </div>
+
+        <!-- END -->
+
+        <div class="f-links">
+          <h3>Links</h3>
+          <ul>
+            <li>
+              <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+              <a href="#">Home</a>
+            </li>
+
+            <li>
+              <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+              <a href="#">About</a>
+            </li>
+
+            <li>
+              <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+              <a href="#">Services</a>
+            </li>
+
+            <li>
+              <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+              <a href="#">Portfolio</a>
+            </li>
+
+            <li>
+              <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- END -->
+
+        <div class="f-services">
+          <h3>Services</h3>
+          <ul>
+            <li>
+              <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+              <a href="#">Web Design</a>
+            </li>
+
+            <li>
+              <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+              <a href="#">Web Development</a>
+            </li>
+
+            <li>
+              <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+              <a href="#">MERN Project</a>
+            </li>
+
+            <li>
+              <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+              <a href="#">Problem Solving</a>
+            </li>
+
+            <li>
+              <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+              <a href="#">Freelancing</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- END -->
+
+        <div class="f-address">
+          <h3>Have a Questions?</h3>
+          <address>
+            <div>
+              <p>
+                <span><ion-icon name="location-outline"></ion-icon></span>
+                Lahore, Pakistan
+              </p>
+            </div>
+
+            <div>
+              <p>
+                <span><ion-icon name="call-outline"></ion-icon></span>
+                <a href="tel:+923099943300"> +92 3099943300 </a>
+              </p>
+            </div>
+
+            <div>
+              <p>
+                <span><ion-icon name="mail-outline"></ion-icon></span>
+                <a href="mailto:waleedahmad5@gmail.com"
+                  >waleedahmad5@gmail.com</a
+                >
+              </p>
+            </div>
+          </address>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="f-social-icons">
+          <a href="https://www.instagram.com" target="_blank">
+            <ion-icon class="icons" name="logo-instagram"></ion-icon>
+          </a>
+
+          <a href="https://discord.gg" target="_blank">
+            <ion-icon class="icons" name="logo-discord"></ion-icon>
+          </a>
+
+          <a href="https://www.youtube.com" target="_blank">
+            <ion-icon class="icons" name="logo-youtube"></ion-icon>
+          </a>
+        </div>
+
+        <div class="f-credits">
+          <p>
+            Copyright ©2022 All rights reserved | This Template Is Made With ❤️
+            By Waleed Ahmad
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ====================================
+
+            Scroll To Top Section START
+
+    ========================================= -->
+
+    <!---- <div class="scrollTop-style">
+      <ion-icon name="arrow-up-outline" class="scroll-top"></ion-icon>
+    </div> -->
+
+    <!-- ====================================
+
+            JavScript Section START
+
+    ========================================= -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  </body>
+</html>
